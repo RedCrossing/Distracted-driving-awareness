@@ -2,7 +2,7 @@
 
 /* box sizing rules */
 * {
-    box-sizing:border-box;
+    /*box-sizing:border-box;*/
 }
 
 /* eliminates default margin */
@@ -133,15 +133,6 @@ aside{
 
 }
 
-iframe{
-   background-color: black;
-    width: 85%;
-    height: 340px;
-   
-
-}
-
-
 .why-img{
     width: 55%;
     /*border: 4px solid rgb(153, 151, 151);*/
@@ -166,6 +157,31 @@ figure2 ul {
 figure2 > ul {
     display: flex;
 }
+
+.fa-eye {
+  width: 50px;
+  height: 50px;
+  background-image: url('https://fontawesome.com/v5/icons/eye?f=classic&s=solid');
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: paused; /* Initially paused */
+}
+
+.fa-eye:hover {
+  animation-play-state: running; /* Starts animation when hovered over */
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+Types {
+    display:flex;
+}
+
 
 
 
