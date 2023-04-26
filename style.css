@@ -83,11 +83,10 @@
  
  section div{
     
-     
      margin: 23px;
-  
-     
+
  }
+ 
  h1{
      text-align: center;
      color: grey;
@@ -95,7 +94,6 @@
  }
  figure {
  
-     
     text-align: center;
     display: flex;
     align-items: center;
@@ -175,6 +173,7 @@
      width: 95%;
      display:flex;
      justify-content: space-between;
+     flex-direction:row-reverse;
      box-shadow: lightgray 2px 2px 2px;
      height: 30px;
      align-items: center;
@@ -183,6 +182,7 @@
  }
  ol{
      display: flex;
+     
  }
  @media (max-width:880px){
       /*body{
@@ -283,9 +283,6 @@
      .fa-solid{
          display: initial;
      }
-     footer ol{
-         display: none;
-     }
- 
+     
  
  }
