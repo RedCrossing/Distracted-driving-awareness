@@ -144,7 +144,7 @@ iframe{
 
 .why-img{
     width: 55%;
-    border: 4px solid rgb(153, 151, 151);
+    /*border: 4px solid rgb(153, 151, 151);*/
 
 }
 
@@ -152,13 +152,30 @@ figure > ul {
     display:flex;
 }
 
-b{ 
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(112, 144, 175);
-   
+figure2 {
+   text-align: center;
+   display: flex;
+   align-items: center;
+   font-size: .9rem;
 }
 
-.questions-to-ask{
+figure2 ul {
+    flex-direction: column;
+}
+
+figure2 > ul {
+    display: flex;
+}
+
+
+
+/*b{ */
+/*    font-family: Arial, Helvetica, sans-serif;*/
+/*    color: rgb(112, 144, 175);*/
+   
+/*}*/
+
+.content-bar{
     
     width: 76%;
     height: 56px;
