@@ -94,14 +94,19 @@ h1 {
 
 .mobile-layout-container1 p {
     display: flex;
-    width: 700px;
+    width: 580px;
     height: 40px;
     text-align: center;
     color: grey;
     font-weight: 300;
     font-size: 15px;
     line-height: 22px;
-    left: calc(50% - 700px/2 + 12px);
+}
+
+.mobile-layout-container1 #h1_bottom {
+    display: flex;
+    margin-left: 232px;
+    margin-bottom: 110px;
 
 }
 
@@ -116,13 +121,16 @@ h1 {
 }
 
 .top_L_1 {
-    border:1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.top_L_2 {
     display: flex;
     align-items: center;
 }
 
 figure {
-    border: 1px solid black;
     margin-bottom: 22px
 }
 
@@ -130,6 +138,13 @@ figure {
     width: 32px;
     height: 32px;
 }
+
+
+.mobile-layout-container1 #two {
+    width: 32px;
+    height: 32px;
+}
+
 
     .left-side h2 {
         font-style: normal;
@@ -298,15 +313,25 @@ figure {
             right: 0;
 
         }
+        
+        input {
+            display:inline;
+            position: relative;
+            bottom: 3px;
+            left: 29px;
+            opacity: 0;
+        }
 
+        header{
+            width: 100%;
+        }
 
         ul {
             width: 65%;
             height: 100vh;
             position: fixed;
-            top: 0;
-            right: 0px;
-            /*left: 100%;*/
+            top: 60px;
+            right: -400px;
             flex-direction: column;
             z-index: 100;
             background-color: rgba(240, 255, 240, 0.685);
