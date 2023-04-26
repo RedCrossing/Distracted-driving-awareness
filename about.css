@@ -166,11 +166,16 @@ figure2 > ul {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-play-state: paused; /* Initially paused */
+  animation-play-state: paused; 
 }
 
 .fa-eye:hover {
-  animation-play-state: running; /* Starts animation when hovered over */
+  animation-play-state: running;
+}
+
+.fa-eye:not(:hover) {
+  animation-play-state: paused;
+ 
 }
 
 @keyframes spin {
@@ -178,9 +183,69 @@ figure2 > ul {
   to { transform: rotate(360deg); }
 }
 
+.fa-car {
+width: 50px;
+height: 50px;
+background-image: url('https://fontawesome.com/v5/icons/car-side?style=solid');
+animation-name: none;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: ease-in-out;
+}
+
+.fa-car:hover {
+animation-name: bounce;
+}
+
+@keyframes bounce {
+from { transform: translateY(0); }
+to { transform: translateY(-10px); }
+}
+
+.fa-brain {
+width: 50px;
+height: 50px;
+transition: transform 0.5s;
+}
+
+.fa-brain:hover {
+transform: scale(1.2);
+}
+
+
+
 Types {
     display:flex;
 }
+
+.icons-row {
+    display: flex;
+   justify-content: space-around;
+   width: 100%;
+   
+}
+
+icons-row i {
+  width: 33.33%;  
+  text-align: center;
+}
+
+.fas {
+     font-size: 50px;
+    /*flex-basis: 33%;*/
+}
+
+.fa {
+    font-size: 50px;
+}
+
+body {
+cursor: url("./Images/car-collision.png"), auto;
+}
+
+
+
 
 
 
@@ -240,25 +305,31 @@ ol{
      /*body{
          background-color: floralwhite;
      }*/
+     
+     
      #logo-img{
          height: 100px;
          width: 100px;
         
      }
+     
      main{
          padding-top: 0;
         flex-direction: column;
          
     }
+    
     aside{
         flex-direction: column;
     }
+    
     .left-side{
        
         width: 100%;
          margin: auto;
 
-   } 
+   }
+   
    figure{
        flex-direction: column;
    }
@@ -267,6 +338,7 @@ ol{
    .questions-to-ask{
        margin: auto;
    }
+   
    .mobile-layout-container1{
        
        background-color: lavender;
@@ -276,17 +348,20 @@ ol{
        
 
    }
+   
    .left-side{
        background-color: white;
        box-shadow: none;
       
    }
+   
    .right-side{
     height: auto;
     
     
    }
-   section img{
+   
+section img{
        width: 30%;
    }
    
