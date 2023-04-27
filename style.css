@@ -5,10 +5,19 @@
     
  }
  body{
-    cursor: url("./Images/car-collision.png"), auto;
+    
     background-color: white;
    font-family: 'Poppins', sans-serif;
  
+ }
+ .logo-brandname{
+     display: flex;
+     align-items: center;
+    
+ }
+ .logo-brandname:hover{
+     cursor: pointer;
+    color: rgb(247, 162, 174)
  }
  input{
      display: none;
@@ -65,8 +74,12 @@
  
  }
  section img{
-     width: 50%;
- }
+     width: 120px;
+     
+    }
+ 
+
+ 
  .left-side{
     
      background-color: lavender;
@@ -115,6 +128,9 @@
     align-items: center;
     font-size: .9rem;
  
+ }
+ aside div{
+    
  }
  
  iframe{
@@ -184,6 +200,23 @@
      display: flex;
      
  }
+ ol li,span{
+     cursor: pointer;
+ }
+
+ ol li:hover,span:hover{
+    color: rgb(247, 162, 174);
+
+    
+}
+footer span{
+    font-size: .7rem;
+    display: flex;
+    align-items: center;
+}
+
+    
+
  @media (max-width:880px){
       /*body{
           background-color: floralwhite;
@@ -267,7 +300,7 @@
          /*left: 100%;*/
          flex-direction: column;
          z-index: 100;
-         background-color:rgba(240, 255, 240, 0.747);
+         background-color:rgb(240, 255, 240);
          transition: all 0.2s ease-in;
          justify-content: center;
          border-radius: 7px;
@@ -283,11 +316,8 @@
      .fa-solid{
          display: initial;
      }
-     
-    ol li:typeOf(2){
+     ol li:nth-child(2),ol li:nth-child(3){
         display: none;
-        
     }
-     
  
  }
