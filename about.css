@@ -130,7 +130,17 @@ aside{
    display: flex;
    align-items: center;
    font-size: .9rem;
+   justify-content: space-around;
+   /*align-content: center;*/
 
+}
+
+.manual {
+    margin-top: -17px;
+}
+
+.cognitive {
+    margin-top: -11px;
 }
 
 .why-img{
@@ -301,69 +311,109 @@ footer{
 ol{
     display: flex;
 }
-@media (max-width:880px){
-     /*body{
-         background-color: floralwhite;
-     }*/
-     
-     
-     #logo-img{
-         height: 100px;
-         width: 100px;
-        
-     }
-     
-     main{
-         padding-top: 0;
-        flex-direction: column;
-         
-    }
-    
-    aside{
-        flex-direction: column;
-    }
-    
-    .left-side{
-       
-        width: 100%;
-         margin: auto;
-
-   }
-   
-   figure{
-       flex-direction: column;
-   }
-  
-
-   .questions-to-ask{
-       margin: auto;
-   }
-   
-   .mobile-layout-container1{
-       
-       background-color: lavender;
-       box-shadow:bisque 2px 2px 2px;
-       border-radius: 8px;
-       width: 100%;
-       
-
-   }
-   
-   .left-side{
-       background-color: white;
-       box-shadow: none;
+ @media (max-width:880px){
+      /*body{
+          background-color: floralwhite;
+      }*/
       
-   }
+      #logo-img{
+          height: 100px;
+          width: 100px;
+         
+      }
+      main{
+          padding-top: 0;
+         flex-direction: column;
+          
+     }
+     aside{
+         flex-direction: column;
+     }
+     .left-side{
+        
+         width: 100%;
+          margin: auto;
+ 
+    } 
+    figure{
+        flex-direction: column;
+    }
    
-   .right-side{
-    height: auto;
+ 
+    .questions-to-ask{
+        margin: auto;
+    }
+    .mobile-layout-container1{
+        
+        background-color: lavender;
+        box-shadow:bisque 2px 2px 2px;
+        border-radius: 8px;
+        width: 100%;
+        
+ 
+    }
+    .left-side{
+        background-color: white;
+        box-shadow: none;
+       
+    }
+    .right-side{
+     height: auto;
+     
+     
+    }
+    section img{
+        width: 30%;
+    }
     
+   
+ }
+ 
+ 
+ @media (max-width:607px){
+     input:checked ~ ul{
+         right: 0;
+ 
+     }
+     input{
+        display: inline;
+        position: relative;
+        bottom: 3px;
+        left: 29px;
+        opacity: 0;
+    }
+     header{
+         width: 100%;
+     }
     
-   }
-   
-section img{
-       width: 30%;
-   }
-   
-  
-}
+    ul{
+         width: 65%;
+         height: 100vh;
+         position:fixed;
+         top: 60px;
+         right: -400px;
+         /*left: 100%;*/
+         flex-direction: column;
+         z-index: 100;
+         background-color:rgba(240, 255, 240, 0.747);
+         transition: all 0.2s ease-in;
+         justify-content: center;
+         border-radius: 7px;
+       
+     }
+     ul li{
+         width: 70%;
+         text-align: center;
+         color: rgb(80, 79, 79);
+            
+     }
+ 
+     .fa-solid{
+         display: initial;
+     }
+     footer ol{
+         display: none;
+     }
+ 
+ 
+ }
