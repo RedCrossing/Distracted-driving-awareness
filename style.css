@@ -5,7 +5,7 @@
     
  }
  body{
-    
+    cursor: url("./Images/car-collision.png"), auto;
     background-color: white;
    font-family: 'Poppins', sans-serif;
  
@@ -283,6 +283,11 @@
      .fa-solid{
          display: initial;
      }
+     
+    li:nthtype(2){
+        display: none;
+        
+    }
      
  
  }
