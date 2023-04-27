@@ -19,6 +19,17 @@ body {
     /*color: grey;*/
 }
 
+.logo-brandname{
+     display: flex;
+     align-items: center;
+    
+ }
+ 
+ .logo-brandname:hover{
+     cursor: pointer;
+    color: rgb(247, 162, 174)
+ }
+
 body > a {
     /*color: grey;*/
 }
@@ -309,19 +320,36 @@ div p{
 }
 
 footer{
-    color: rgb(168, 162, 162);
-    margin: auto;
-    width: 95%;
-    display:flex;
-    justify-content: space-between;
-    box-shadow: lightgray 2px 2px 2px;
-    height: 30px;
-    align-items: center;
-    background-color: beige;
-    border-radius: 5px;
+     color: rgb(168, 162, 162);
+     margin: auto;
+     width: 95%;
+     display:flex;
+     justify-content: space-between;
+     flex-direction:row-reverse;
+     box-shadow: lightgray 2px 2px 2px;
+     height: 30px;
+     align-items: center;
+     background-color: beige;
+     border-radius: 5px;
+ }
+ ol{
+     display: flex;
+     
+ }
+ ol li,span{
+     cursor: pointer;
+ }
+
+ ol li:hover,span:hover{
+    color: rgb(247, 162, 174);
+
+    
 }
-ol{
+footer span{
+    font-size: .7rem;
     display: flex;
+    align-items: center;
+
 }
  @media (max-width:880px){
       /*body{
@@ -429,9 +457,10 @@ ol{
      .fa-solid{
          display: initial;
      }
-     footer ol{
-         display: none;
-     }
+     
+     ol li:nth-child(2),ol li:nth-child(3){
+        display: none;
+    }
  
  
  }
