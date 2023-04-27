@@ -441,7 +441,7 @@ footer span{
          /*left: 100%;*/
          flex-direction: column;
          z-index: 100;
-         background-color:rgba(240, 255, 240, 0.747);
+         background-color:rgb(240, 255, 240);
          transition: all 0.2s ease-in;
          justify-content: center;
          border-radius: 7px;
