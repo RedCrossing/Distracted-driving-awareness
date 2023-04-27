@@ -2,14 +2,25 @@
 
     padding: 10px;
     list-style: none;
+
 }
 
 body {
-
+    cursor: url("./Images/car-collision.png"), auto;
     background-color: white;
     font-family: 'Poppins', sans-serif;
 
 }
+
+ .logo-brandname{
+     display: flex;
+     align-items: center;
+    
+ }
+ .logo-brandname:hover{
+     cursor: pointer;
+    color: rgb(247, 162, 174)
+ }
 
 input {
     display: none;
@@ -30,6 +41,7 @@ header {
 
 }
 
+
 .fa-solid {
     display: none;
 }
@@ -43,7 +55,7 @@ li {
     margin-left: 20px;
 }
 
-li:hover {
+li a:hover {
     color: rgb(247, 162, 174);
 
 }
@@ -70,7 +82,7 @@ section img {
 
     background-color: lavender;
     width: 1296px;
-    height: 2676px;
+    height: 1000%;
     border-radius: 11px;
     box-shadow: bisque 2px 2px 2px;
     display: flex;
@@ -249,22 +261,38 @@ figure {
 
     }
 
-    footer {
-        color: rgb(168, 162, 162);
-        margin: auto;
-        width: 95%;
-        display: flex;
-        justify-content: space-between;
-        box-shadow: lightgray 2px 2px 2px;
-        height: 30px;
-        align-items: center;
-        background-color: beige;
-        border-radius: 5px;
-    }
+    footer{
+     color: rgb(168, 162, 162);
+     margin: auto;
+     width: 95%;
+     display:flex;
+     justify-content: space-between;
+     flex-direction:row-reverse;
+     box-shadow: lightgray 2px 2px 2px;
+     height: 30px;
+     align-items: center;
+     background-color: beige;
+     border-radius: 5px;
+ }
+ ol{
+     display: flex;
+     
+ }
+ ol li,span{
+     cursor: pointer;
+ }
 
-    ol {
-        display: flex;
-    }
+ ol li:hover,span:hover{
+    color: rgb(247, 162, 174);
+
+    
+}
+footer span{
+    font-size: .7rem;
+    display: flex;
+    align-items: center;
+}
+
 
     @media (max-width:880px) {
 
@@ -382,7 +410,7 @@ figure {
             right: -400px;
             flex-direction: column;
             z-index: 100;
-            background-color: rgba(240, 255, 240, 0.685);
+            background-color: rgb(240, 255, 240);
             transition: all 0.2s ease-in;
             justify-content: center;
             border-radius: 7px;
@@ -400,7 +428,9 @@ figure {
             display: initial;
         }
 
-        footer ol {
+        
+        
+         ol li:nth-child(2),ol li:nth-child(3){
             display: none;
         }
 
