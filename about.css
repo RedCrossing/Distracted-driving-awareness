@@ -482,3 +482,13 @@ footer span{
  
  
  }
+  @media (max-width:414px){
+
+    .logo-brandname{
+        font-size: .5rem;
+    }
+    #logo-img{
+        width: 34px;
+       height: 42px;
+    }
+ }
