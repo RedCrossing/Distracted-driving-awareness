@@ -403,6 +403,15 @@ footer span{
         box-shadow: none;
        
     }
+    
+    .why-img{
+    width: 70%;
+    }
+    
+    
+    .problem-img {
+        width: 60%;
+    }
     .right-side{
      height: auto;
      
@@ -431,6 +440,15 @@ footer span{
      header{
          width: 100%;
      }
+     
+     
+    .problem-img {
+        width: 100%;
+    }
+    
+    .why-img{
+    width: 120%;
+    }
     
     ul{
          width: 65%;
