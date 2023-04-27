@@ -284,7 +284,7 @@
          display: initial;
      }
      
-    li:nthtype(2){
+    ol li:typeOf(2){
         display: none;
         
     }
