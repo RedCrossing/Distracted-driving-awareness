@@ -45,6 +45,18 @@ header {
     border-radius: 5px;
     
 }
+
+ a {
+    text-decoration: none;
+    color: rgb(168, 162, 162);
+}
+
+li a:hover{
+     color: rgb(247, 162, 174);
+     text-decoration: none
+     
+ }
+ 
 .fa-solid {
     display: none;
 }
@@ -335,12 +347,18 @@ ol{
           margin: auto;
  
     } 
+    
     figure{
         flex-direction: column;
     }
+    
+    figure2{
+        flex-direction: column;
+    }
+   
    
  
-    .questions-to-ask{
+    .content-bar{
         margin: auto;
     }
     .mobile-layout-container1{
