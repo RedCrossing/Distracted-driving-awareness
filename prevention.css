@@ -120,6 +120,10 @@ h1 {
     
 }
 
+.mobile-layout-container1 .Mobile_Img {
+            display: none;
+    }
+
 .top_L_1 {
     display: flex;
     align-items: center;
@@ -161,6 +165,15 @@ figure {
         align-items: center;
         font-size: .9rem;
         line-height: 36px;
+    }
+    
+    hr {
+        padding: 0;
+    }
+    
+    a {
+        text-decoration: none;
+        color: grey;
     }
 
     aside {
@@ -252,6 +265,7 @@ figure {
             width: 100px;
 
         }
+        
 
         main {
             padding-top: 0;
@@ -287,6 +301,24 @@ figure {
             width: 100%;
         }
 
+         
+        .mobile-layout-container1 .Desktop_Img {
+            display: none;
+        }
+        
+        .mobile-layout-container1 .Mobile_Img {
+            width: 350px;
+            height: 271px;
+            margin-left: 7%;
+            display: block;
+        }
+        
+        .mobile-layout-container1 #h1_bottom {
+            display: flex;
+            margin-left: 7%;
+            width: 343px;
+            height: 94px;
+        }
 
         .left-side {
             background-color: white;
@@ -314,6 +346,11 @@ figure {
 
         }
         
+        /*.left-side {*/
+        /*    display: none;*/
+        /*}*/
+       
+        
         input {
             display:inline;
             position: relative;
@@ -324,6 +361,19 @@ figure {
 
         header{
             width: 100%;
+        }
+        
+         .mobile-layout-container1 .Mobile_Img {
+            width: 300px;
+            height: 250px;
+            margin-left: 3%;
+            display: block;
+        }
+        .mobile-layout-container1 #h1_bottom {
+            display: flex;
+            margin-left: 7%;
+            width: 300px;
+            height: 94px;
         }
 
         ul {
